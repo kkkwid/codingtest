@@ -6,19 +6,13 @@ class Solution {
             for(int j = i+1; j<nums.length; j++){
                 for(int k = j+1; k<nums.length; k++){
                     sum = nums[i]+nums[j]+nums[k];
-                    int check = 1;
-                    System.out.printf("%d,%d,%d ",nums[i],nums[j],nums[k]);
                     for(int l = 2; l < sum; l++){
                         if(sum % l == 0){
-                            check = 0;
                             break;
                         }
-                        else{
-                            check = 1;
+                        else if(l == sum-1){
+                            answer++;
                         }
-                    }
-                    if(check == 1){
-                        answer++;
                     }
                 }
                 
