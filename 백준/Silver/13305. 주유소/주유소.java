@@ -8,8 +8,8 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
         int N = Integer.parseInt(br.readLine());
-        int[] oil = new int[N];
-        int[] load = new int[N-1];
+        long[] oil = new long[N];
+        long[] load = new long[N-1];
         st = new StringTokenizer(br.readLine());
         for(int i = 0; i< N-1; i++){
             load[i] = Integer.parseInt(st.nextToken());
@@ -18,8 +18,8 @@ public class Main {
         for(int i = 0; i< N; i++){
             oil[i] = Integer.parseInt(st.nextToken());
         }
-        int min = oil[0];
-        int price = load[0] * min;
+        long min = oil[0];
+        long price = load[0] * min;
 
         for(int i = 1; i< N-1; i++) {
             if(min > oil[i]){
