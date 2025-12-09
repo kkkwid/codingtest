@@ -47,8 +47,6 @@ class Solution {
                 
             }
         }
-        
-        //결과 정리정돈
        
        if(map.get('R')==null||map.get('R')>=map.get('T')){
            answer+="R";
