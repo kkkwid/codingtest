@@ -27,6 +27,7 @@ public class Main {
 
         Collections.sort(result);
 
+        // print result
         System.out.println(result.size());
         for (String s : result) {
             System.out.println(s);
